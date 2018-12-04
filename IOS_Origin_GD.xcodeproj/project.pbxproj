@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		168C077021B61B5000AEBDB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C076F21B61B5000AEBDB4 /* AppDelegate.swift */; };
-		168C077221B61B5000AEBDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168C077121B61B5000AEBDB4 /* ViewController.swift */; };
 		168C077521B61B5000AEBDB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168C077321B61B5000AEBDB4 /* Main.storyboard */; };
 		168C077721B61B6500AEBDB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168C077621B61B6500AEBDB4 /* Assets.xcassets */; };
 		168C077A21B61B6500AEBDB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168C077821B61B6500AEBDB4 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		168C076C21B61B5000AEBDB4 /* IOS_Origin_GD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Origin_GD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168C076F21B61B5000AEBDB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		168C077121B61B5000AEBDB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		168C077421B61B5000AEBDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		168C077621B61B6500AEBDB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		168C077921B61B6500AEBDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		168C076E21B61B5000AEBDB4 /* IOS_Origin_GD */ = {
 			isa = PBXGroup;
 			children = (
+				16D490FB21B64459007F19A8 /* Classes */,
 				168C076F21B61B5000AEBDB4 /* AppDelegate.swift */,
-				168C077121B61B5000AEBDB4 /* ViewController.swift */,
 				168C077321B61B5000AEBDB4 /* Main.storyboard */,
 				168C077621B61B6500AEBDB4 /* Assets.xcassets */,
 				168C077821B61B6500AEBDB4 /* LaunchScreen.storyboard */,
@@ -123,6 +121,45 @@
 				168C079121B61B6600AEBDB4 /* Info.plist */,
 			);
 			path = IOS_Origin_GDUITests;
+			sourceTree = "<group>";
+		};
+		16D490FB21B64459007F19A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				16D490FF21B64459007F19A8 /* Main(主要) */,
+				16D490FE21B64459007F19A8 /* Index(首页) */,
+				16D490FD21B64459007F19A8 /* Ht(海淘) */,
+				16D490FC21B64459007F19A8 /* HourList(小时风云榜) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		16D490FC21B64459007F19A8 /* HourList(小时风云榜) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "HourList(小时风云榜)";
+			sourceTree = "<group>";
+		};
+		16D490FD21B64459007F19A8 /* Ht(海淘) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Ht(海淘)";
+			sourceTree = "<group>";
+		};
+		16D490FE21B64459007F19A8 /* Index(首页) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Index(首页)";
+			sourceTree = "<group>";
+		};
+		16D490FF21B64459007F19A8 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main(主要)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168C077221B61B5000AEBDB4 /* ViewController.swift in Sources */,
 				168C077021B61B5000AEBDB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64D3CU6BY4;
 				INFOPLIST_FILE = IOS_Origin_GD/Info.plist;
@@ -442,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leadshow.IOS-Origin-GD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64D3CU6BY4;
 				INFOPLIST_FILE = IOS_Origin_GD/Info.plist;
@@ -460,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leadshow.IOS-Origin-GD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
